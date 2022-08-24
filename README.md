@@ -1,7 +1,8 @@
 # SpaceInvader
 Space Invaders game using JavaScript , HTML, CSS
 
-##GOAL
+## GOAL
+
 The goal of the game is for the humans to win in which you will shoot down all of the aliens 
 and save all of humanity!!
 
