@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+   /* box-sizing: border-box; this actually made it so that we had 596 px instead of 600*/
+    font-family:Impact;
+  }
+  
+  body {
+    background-color: rgb(207, 112, 216);
+  }
+  .grid{
+   
+    width: 600px;
+    height: 600px;
+    border: white solid 2px;
+    display: grid;
+    /*please do this a certain number of times until everything fit with the pixels*/
+    grid-template-columns: repeat(auto-fit, 40px);
+    /*if we need to generate more rows do so with exactly a height of 40px*/
+    grid-auto-rows: 40px;
+  }
+  .app{
+    display: grid;
+    grid-template-columns: 644px 1fr;
+  }
+  
+  .grid > div{
+    width: 40px;
+    height:40px;
+
+    background-size: contain;
+  }
+  .message{
+    position:absolute;
+    top: 200px;
+    left: 50px;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(135, 86, 199);
+    opacity: 85%;
+  }
+  .message h1{
+    color: white;
+    text-align:center;
+    line-height: 100px;
+  }
+  /* .start{
+    position:absolute;
+    top: 200px;
+    left: 50px;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(135, 86, 199);
+    opacity: 85%;
+  }
+
+  .start h2{
+    color: white;
+    text-align:center;
+    line-height: 100px;
+  } */
+  .scoreboard {
+    margin: 20px;
+    color: white;
+  }
+  
+  .scoreboard > * {
+    margin: 20px;
+    
+  }
+  .spaceship{
+    background-image: url('./images/spaceship.png');
+  }
+
+  .laser{
+    background-image: url('./images/projectile.png');
+  }
+  .alien{
+    background-image: url('./images/alien.png');
+  }
+  .hit{
+    background-image: url('./images/explosion.png');
+
+  }
+  .startOver{
+    width: 300px;
+    height:100px;
+    background-color:aquamarine
+
+
+  }
